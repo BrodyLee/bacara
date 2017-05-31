@@ -67,9 +67,11 @@ body h6 {
   display: block;
 }
 section.first-slide-bg {
+  display: flex;
+  align-items: center;
   margin-top: 120px;
   background: url(../img/bg-slide-1.jpg) no-repeat fixed;
-  background-size: cover;
+  background-size: 100% 100%;
   position: relative;
   color: white;
   height: 480px;
@@ -125,7 +127,6 @@ section.first-slide-bg .container {
 section.first-slide-bg h1 {
   font-weight: 700;
   font-size: 35px;
-  margin-top: 80px;
   line-height: 45px;
 }
 section.first-slide-bg img[alt="line"] {
@@ -148,14 +149,14 @@ section.first-slide-bg:after {
   display: block;
 }
 .item {
-  margin-top: 105px;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
 .item h4 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 40px;
   color: black;
   font-family: 'Roboto Slab', serif;
@@ -172,29 +173,37 @@ section.first-slide-bg:after {
 .item img {
   width: 100%;
   max-width: 250px;
-  height: 250px;
+  height: 100%;
 }
 .item button {
   background: #2e982e;
   border: none;
   border-radius: 4px;
-  padding: 11px 29px;
+  padding: 11.5px 21.5px;
+  height: 44px;
   color: white;
   margin-top: 19px;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
-  letter-spacing: 0.35px;
+  letter-spacing: 1.5px;
   font-weight: 400;
   text-transform: uppercase;
 }
 .main {
-  height: 1350px;
+  float: left;
+  width: 100%;
+}
+.main .no-marg-r {
+  margin-right: 0 !important;
+}
+.main .container {
+  width: 100% !important;
 }
 .main * {
   box-sizing: border-box;
 }
 .main h2 {
-  margin-top: 60px;
+  margin-top: 45px;
   margin-bottom: 33px;
   color: #1e1e1e;
   font-family: 'Roboto Slab', sans-serif;
@@ -212,7 +221,7 @@ section.first-slide-bg:after {
 }
 .main .tabbed > label {
   display: inline-block;
-  margin-right: 4.7%;
+  margin-right: 5%;
   cursor: pointer;
   transition: background-color 0.3s;
   color: #1e1e1e;
@@ -232,6 +241,7 @@ section.first-slide-bg:after {
 .main .tabs {
   clear: both;
   perspective: 600px;
+  min-height: 1100px;
 }
 .main .tabs > div {
   display: flex;
@@ -257,10 +267,25 @@ section.first-slide-bg:after {
   z-index: 1;
 }
 .line_gray {
-  margin: auto;
+  width: 100%;
+  margin: 0 58px 0 58px;
   height: 1px;
-  background: gray;
-  width: 87.5%;
+  background: #000;
+  box-sizing: border-box;
+}
+.rec {
+  float: left;
+  width: 100%;
+}
+.rec .container {
+  width: 100%;
+}
+.rec .item {
+  margin-top: 45px;
+}
+.rec .outer-recomend {
+  width: 95%;
+  margin: auto;
 }
 .rec .row {
   display: flex;
@@ -271,7 +296,7 @@ section.first-slide-bg:after {
   font-family: 'Roboto Slab', sans-serif;
   font-size: 25px;
   font-weight: 300;
-  margin-left: 6.1%;
+  margin-left: 43px;
   width: 100%;
 }
 footer {
@@ -347,17 +372,20 @@ footer .phone {
     height: 340px;
   }
   section.first-slide-bg h1 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 65px;
   }
   section.first-slide-bg img[alt='line'] {
     width: 75%;
   }
   section.first-slide-bg h5 {
     font-size: 12px;
+    line-height: 26px;
   }
   .basket {
     width: 103px;
+    margin-top: 14px;
   }
   .basket p {
     display: none;
@@ -374,6 +402,9 @@ footer .phone {
   .main .item {
     margin-top: 20px;
   }
+  .main h2 {
+    font-size: 24px;
+  }
   .rec {
     margin-top: 300px;
   }
@@ -382,9 +413,6 @@ footer .phone {
   }
   footer {
     text-align: center;
-  }
-  footer ul {
-    margin-left: -33px;
   }
   footer button {
     margin-bottom: 20px;
@@ -556,9 +584,6 @@ footer .phone {
   footer a:visited {
     color: #b4b4b4;
   }
-  footer ul li {
-    margin-top: 8px;
-  }
   footer button {
     background: none;
     border: 1px solid white;
@@ -575,7 +600,6 @@ footer .phone {
     border-right: 1px solid #5e5e5e;
   }
   footer .social {
-    border-left: 1px solid #5e5e5e;
     margin-left: -1px;
   }
   footer .icon {
@@ -594,6 +618,9 @@ footer .phone {
   .rec .row {
     justify-content: center;
   }
+  .rec .rec-title {
+    margin-left: 0;
+  }
 }
 @media (max-width: 762px) {
   .tabs > div {
@@ -601,9 +628,9 @@ footer .phone {
     justify-content: center;
   }
 }
-@media (max-width: 574px) {
+@media (max-width: 558px) {
   .rec {
-    margin-top: 1167px;
+    margin-top: 1075px;
   }
 }
 @media (max-width: 526px) {
@@ -622,9 +649,6 @@ footer .phone {
 }
 @media (max-width: 380px) {
   .basket {
-    margin-top: 10px;
+    margin-top: 9px !important;
   }
-}
-.basket {
-  margin-top: 19px;
 }

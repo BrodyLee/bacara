@@ -102,6 +102,7 @@ header {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  letter-spacing: 1px;
   text-transform: uppercase;
   border: none;
 }
@@ -146,6 +147,10 @@ header {
 .progress-td img {
   float: left;
   width: 198px;
+}
+.flex-col {
+  display: flex;
+  justify-content: center;
 }
 .product-info {
   max-width: 475px;
@@ -286,9 +291,6 @@ footer .phone {
   }
   footer {
     text-align: center;
-  }
-  footer ul {
-    margin-left: -33px;
   }
   footer button {
     margin-bottom: 20px;

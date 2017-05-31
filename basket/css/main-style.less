@@ -125,8 +125,9 @@ input[type='number']{
   padding: 0 !important;
 }
 .main {
+  margin-top: 50px;
   h2 {
-    margin-top: 80px;
+    margin-top: 30px;
     color: #1e1e1e;
     font-family: 'Roboto Slab', serif;
     font-size: 35px;
@@ -136,8 +137,11 @@ input[type='number']{
 img[alt='line'] {
   margin-bottom: 78px;
 }
-
+  .offset-name {
+    margin-left: 14% ;
+  }
   .name {
+
     h5 {
       color: #212121;
       font-family: 'Open Sans',sans-serif;
@@ -158,12 +162,15 @@ img[alt='line'] {
   .toggle-target.is-visible {
     display: block;
   }
-  margin-top: 50px;
+
   .basket_line {
     border: 1px solid #1e1e1e;
     padding: 5px;
     &:last-child {
       border-top: none;
+    }
+    .no-padd {
+      width: 14.1%;
     }
     .product-title {
       margin-left: -5px;
@@ -294,10 +301,10 @@ img[alt='line'] {
     }
     select {
       width: 80%;
-      padding: 7px;
+      padding: 5.5px;
     }
     .save {
-      margin-top: 50px;
+      margin-top: 40px;
       p {
         margin-top: -21px;
       }
@@ -311,9 +318,15 @@ img[alt='line'] {
     }
     .res {
       button {
-        padding: 5px;
-        background: #920000;
+        height: 38px;
+        background-color: #ac0000;
+        border: 1px solid #ac0000;
         color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.40px;
+        text-transform: uppercase;
         width: 80%;
       }
     }
@@ -438,10 +451,7 @@ footer {
     }
   }
   footer {
-    text-align: center;
-    ul {
-      margin-left: -33px;
-    }
+    text-align: left;
     button {
       margin-bottom: 20px;
     }

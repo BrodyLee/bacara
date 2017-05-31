@@ -119,7 +119,7 @@ input[type='number'] {
   margin-top: 50px;
 }
 .main h2 {
-  margin-top: 80px;
+  margin-top: 30px;
   color: #1e1e1e;
   font-family: 'Roboto Slab', serif;
   font-size: 35px;
@@ -128,6 +128,9 @@ input[type='number'] {
 }
 .main img[alt='line'] {
   margin-bottom: 78px;
+}
+.main .offset-name {
+  margin-left: 14% ;
 }
 .main .name h5 {
   color: #212121;
@@ -152,6 +155,9 @@ input[type='number'] {
 }
 .main .basket_line:last-child {
   border-top: none;
+}
+.main .basket_line .no-padd {
+  width: 14.1%;
 }
 .main .basket_line .product-title {
   margin-left: -5px;
@@ -279,10 +285,10 @@ input[type='number'] {
 }
 .main .form select {
   width: 80%;
-  padding: 7px;
+  padding: 5.5px;
 }
 .main .form .save {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .main .form .save p {
   margin-top: -21px;
@@ -295,9 +301,15 @@ input[type='number'] {
   padding: 50px;
 }
 .main .form .res button {
-  padding: 5px;
-  background: #920000;
+  height: 38px;
+  background-color: #ac0000;
+  border: 1px solid #ac0000;
   color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.40px;
+  text-transform: uppercase;
   width: 80%;
 }
 footer {
@@ -409,10 +421,7 @@ footer .phone {
     margin-left: 0;
   }
   footer {
-    text-align: center;
-  }
-  footer ul {
-    margin-left: -33px;
+    text-align: left;
   }
   footer button {
     margin-bottom: 20px;

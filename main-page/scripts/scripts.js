@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 
-    $('#horeca-hed').animated("bounceInLeft", "bounceOutLeft");
-    $('#dealers-hed').animated("bounceInRight", "bounceOutRight");
+    $('#horeca-hed').animated("animated bounceInLeft");
+    $('#dealers-hed').animated("animated bounceInRight");
 
     $(function(){
         $(".main-nav ul li").hover(function(){
@@ -338,14 +338,6 @@ $(document).ready(function(){
     })
         .setClassToggle('#sx-cart', 'moveOn')
         .addTo(controller);
-
-
-
-
-
-
-
-
 
 
 });

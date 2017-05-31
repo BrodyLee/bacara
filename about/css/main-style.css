@@ -17,6 +17,23 @@ body h6 {
   right: 0;
   left: inherit;
 }
+.info-us {
+  list-style: none;
+  padding-left: 52px;
+}
+.info-us li {
+  position: relative;
+}
+.info-us li:before {
+  content: '';
+  position: absolute;
+  left: -29px;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: black;
+}
 header {
   height: 120px;
 }

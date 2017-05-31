@@ -71,7 +71,7 @@ section.first-slide-bg {
   align-items: center;
   margin-top: 120px;
   background: url(../img/bg-slide-1.jpg) no-repeat fixed;
-  background-size: 100% 100%;
+  background-size: cover;
   position: relative;
   color: white;
   height: 480px;
@@ -286,6 +286,9 @@ section.first-slide-bg:after {
 .rec .outer-recomend {
   width: 95%;
   margin: auto;
+}
+.rec .outer-recomend .col-md-3 {
+  width: 24.98%;
 }
 .rec .row {
   display: flex;

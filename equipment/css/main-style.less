@@ -78,9 +78,10 @@ section.first-slide-bg{
   display: flex;
   align-items: center;
   margin-top: 120px;
-  background: url('../img/bg-slide-1.png') no-repeat fixed;
-  background-size: 100% 100%;
+  background: url('../img/bg-slide-1.png') no-repeat;
+  background-size: cover;
   position: relative;
+  background-position: -1px;
   color: white;
   height: 480px;
   a {
@@ -250,7 +251,7 @@ section.first-slide-bg{
   .tabs {
     clear: both;
     perspective: 600px;
-    min-height: 1100px;
+    min-height: 1005px;
   }
   .tabs > div {
     display: flex;
@@ -295,6 +296,9 @@ section.first-slide-bg{
   .outer-recomend {
     width: 95%;
     margin: auto;
+    .col-md-3 {
+      width: 24.98%;
+    }
   }
   .row {
     display: flex;

@@ -900,30 +900,27 @@ body h6 {
 }
 .feedback .slide-3 {
   background: url("../img/background/slide_3.png") no-repeat;
-  background-size: cover;
   color: white;
   background-color: #1e4a58;
-  background-size: 69% 103%;
-  background-position: 124%;
+  background-size: contain;
+  background-position: 100%;
 }
 .feedback .slide-2 {
   background: url("../img/background/slide_2.png") no-repeat;
-  background-size: cover;
   color: white;
   background-color: #1e4a58;
-  background-size: 69% 103%;
-  background-position: 124%;
+  background-size: contain;
+  background-position: 100%;
 }
 .feedback .slide-1 {
   background: url("../img/background/slide_2 (1).png") no-repeat;
-  background-size: cover;
   color: white;
   background-color: #1e4a58;
-  background-size: 69% 103%;
-  background-position: 124%;
+  background-size: contain;
+  background-position: 100%;
 }
 .about_us {
-  margin-top: 465px;
+  margin-top: 444px;
 }
 .about_us p {
   color: #202020;
@@ -1042,7 +1039,7 @@ body h6 {
   width: 100%;
   height: 100%;
   position: relative;
-  padding-top: 70px;
+  padding-top: 25px;
 }
 .white-fon.no-padd {
   padding: 0 !important;
@@ -1246,7 +1243,7 @@ body h6 {
   margin-top: 35px;
 }
 .form {
-  margin-top: 100px;
+  margin-top: 10px;
   position: relative;
   font-weight: 700;
   height: 594px;
@@ -1344,7 +1341,7 @@ img[alt="inst_logo"] {
   position: relative;
   overflow: hidden;
   clear: both;
-  padding-top: 80px;
+  padding-top: 80px !important;
 }
 .inst-logo {
   margin-bottom: 14px;

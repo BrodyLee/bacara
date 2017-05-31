@@ -78,8 +78,8 @@ section.first-slide-bg{
   display: flex;
   align-items: center;
   margin-top: 120px;
-  background: url('../img/head_bg (1).png') no-repeat fixed;
-  background-size: 100% 100%;
+  background: url('../img/head_bg (1).png') no-repeat;
+  background-size: cover;
   background-position: 0 -10px;
   position: relative;
   color: white;
@@ -151,7 +151,7 @@ section.first-slide-bg{
   &:after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: -12px;
     background-image: url(../images/Untitledwawe.png);
     width: 100%;
     background-size: cover;
@@ -254,7 +254,7 @@ section.first-slide-bg{
   .tabs {
     clear: both;
     perspective: 600px;
-    min-height: 1100px;
+    min-height: 1005px;
   }
   .tabs > div {
     display: flex;
@@ -299,6 +299,9 @@ section.first-slide-bg{
   .outer-recomend {
     width: 95%;
     margin: auto;
+    .col-md-3 {
+      width: 24.98%;
+    }
   }
   .row {
     display: flex;

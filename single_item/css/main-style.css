@@ -152,6 +152,9 @@ header {
   display: flex;
   justify-content: center;
 }
+.flex-col .col-md-5 {
+  width: 32%;
+}
 .product-info {
   max-width: 475px;
   width: 100%;

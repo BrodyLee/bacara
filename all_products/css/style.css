@@ -1845,6 +1845,7 @@ span.slid-name p {
   height: 418px;
   margin-bottom: 25px !important;
   margin-top: -50px;
+  overflow: visible !important;
 }
 .slider-brand:focus {
   outline: none;

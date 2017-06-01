@@ -279,7 +279,7 @@ body {
   }
 }
 .selling {
-  box-shadow: 0 -1px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
   z-index: 1;
   position: relative;
   height: 203px;
@@ -288,19 +288,19 @@ body {
   &:before {
       content: '';
       position: absolute;
-      background: url("../img/Untitledwawe.png") no-repeat;
-      left:0;
-      top: -10px;
-    width: 100%;
+      background: url("../img/line-shadow-small.png") no-repeat;
+    left: -3px;
+    top: -14px;
+    width: 101%;
     height: 15px;
     }
   &:after{
     content: '';
     position: absolute;
-    background: url("../img/Untitledwawe.png") no-repeat;
-    left:0;
-    bottom: -10px;
-    width: 100%;
+    background: url("../img/line-shadow-small.png") no-repeat;
+    left: -3px;
+    bottom: -14px;
+    width: 101%;
     height: 15px;
     transform: rotate(180deg);
   }
@@ -437,9 +437,9 @@ body {
   }
   &:after {
     content: '';
-    background: url('../img/Untitledwawe3.png');
+    background: url('../img/line-shadow.png');
     width: 100%;
-    height: 15px;
+    height: 30px;
     display: block;
     position: relative;
     bottom: -40px;
@@ -627,7 +627,8 @@ body {
     height: 1%;
     animation-duration: 3s;
     z-index: 0;
-    background: url("../img/border-line.png") repeat-x;
+    background: url("../img/border-line.png") ;
+    background-repeat: no-repeat;
   }
 }
   .border-line {
@@ -646,7 +647,7 @@ body {
     &_3l {
       background: url("../img/border-circle.png") no-repeat !important;
       top: 707px;
-      left: -6px;
+      left: 15px;
       width: 50%;
       height: 107% !important;
       transform: rotate(5deg);
@@ -1373,11 +1374,11 @@ body {
   font-weight: 700;
   height: 594px;
   padding: 1px 20px 30px 58px;
-  box-shadow: 0 0 43px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 86px rgba(0, 0, 0, 0.30);
   &:before {
     content: '';
     position: absolute;
-    background: url("../img/Untitledwawe.png") no-repeat;
+    background: url("../img/Untitledwawe.png");
     left:0;
     top: -10px;
     width: 100%;
@@ -1386,7 +1387,7 @@ body {
   &:after {
     content: '';
     position: absolute;
-    background: url("../img/Untitledwawe.png") no-repeat;
+    background: url("../img/Untitledwawe.png");
     left:0;
     bottom: -10px;
     width: 100%;
@@ -1543,7 +1544,7 @@ footer {
   }
   .foot-logo {
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   ul {
     display: inline-block;

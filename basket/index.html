@@ -8,6 +8,7 @@
     <title>Workpiece</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,400i|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main-style.css">
 </head>
@@ -213,7 +214,7 @@
             </div>
         </div>
         <div class="form toggle-target js-toggle-target">
-            <div class="row">
+            <div class="row form-flex">
                 <div class="col-md-6">
                     <h4>Контактна інформація</h4>
                     <p>Ім’я та Прізвище</p>
@@ -227,30 +228,27 @@
                 </div>
                 <div class="col-md-6 res">
                     <h4>Інформація про доставку</h4>
-                    <p>Спосіб доставки:</p>
-                    <select name="post" id="post">
-                        <option>
-                            Нова Пошта
-                        </option>
+                    <label for="delivery">Спосіб доставки</label>
+                    <select name="delivery" id="delivery">
+                        <option>МістExpress</option>
+                        <option selected="selected">Нова Пошта</option>
                     </select>
                     <p>Адреса</p>
                     <input type="text" name="phone" placeholder="">
-                    <p>Спосіб оплати</p>
-                    <select name="post" id="money">
-                        <option>
-                            По перерахунку
-                        </option>
+                    <label for="pay-way">Спосіб доставки</label>
+                    <select name="pay-way" id="pay-way">
+                        <option>Наложеним платежем</option>
+                        <option selected="selected">По перерахунку</option>
                     </select>
                     <br>
                     <h4 class="result visible-xs">Всього до сплати: <span>600грн</span></h4>
-                    <div class="save">
-                        <input type="checkbox" name="check" id="check" placeholder="">
-                        <p>
-                            Зберегти мої дані для швидкого оформлення
-                            замовлення
-                        </p>
+                    <div class="widget">
+                        <fieldset>
+                            <label for="checkbox-1">Зберегти мої дані для швидкого оформлення замовлення</label>
+                            <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                        </fieldset>
                     </div>
-                    <br>
+
                     <button>
                         Замовити
                     </button>
@@ -320,6 +318,7 @@
 </footer>
 <!------------------------------------Scripts----------------------------------->
 <script src="js/jquery-3.2.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
     $(function(){
         $(".main-nav ul li").hover(function(){
@@ -329,6 +328,9 @@
                 $(".dropdown", this).css("display", "none");
             }
         );
+        $( "#delivery" ).selectmenu();
+        $( "#pay-way" ).selectmenu();
+        $( "#checkbox-1" ).checkboxradio();
     });
 </script>
 <script>

@@ -183,7 +183,7 @@ button {
 .whatsay .slick-dots li {
   width: 12px;
   height: 12px;
-  margin: 0 17px;
+  margin: 0 6.5px;
 }
 .whatsay .slick-dots li button:before {
   width: 12px;
@@ -513,7 +513,6 @@ button {
   border-right: 1px solid white;
   border-bottom: none;
   background-image: url(../images/bacara.jpg);
-  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: cover;
@@ -549,10 +548,10 @@ button {
   border-bottom: 0;
   right: 0;
   background-image: url(../images/dealers.jpg);
-  background-position: center center;
+  background-position: -160px;
   background-repeat: no-repeat;
   background-attachment: inherit;
-  background-size: cover;
+  background-size: 140% 140%;
   transition: 0.2s;
   overflow: hidden;
 }
@@ -721,6 +720,7 @@ button {
   width: 90%;
   margin: 0 auto;
   background-color: #F5F5F5;
+  height: 960px;
 }
 .block-name {
   text-align: center;
@@ -902,7 +902,7 @@ button {
   bottom: 17%;
   right: 21%;
   animation-duration: 3s;
-  z-index: 1;
+  z-index: 10;
 }
 #fifth-part .why-img-cont {
   position: relative;
@@ -946,7 +946,7 @@ span.red-point.marg {
   transform: rotate(-8deg);
   top: 16%;
   background-image: url(../images/border.png);
-  background-repeat-y: no-repeat;
+  background-repeat: no-repeat;
   border: none;
   right: 36.5%;
   width: 19%;
@@ -1407,7 +1407,7 @@ span.red-point.marg {
 .first-year {
   background-color: #E6E6E6;
   text-align: center;
-  height: 1160px;
+  height: 1060px;
   position: relative;
   padding-top: 30px;
 }
@@ -1424,7 +1424,7 @@ span.red-point.marg {
   position: relative;
 }
 .first-year-top {
-  margin-bottom: 90px;
+  margin-bottom: 30px;
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
 }
@@ -1440,7 +1440,7 @@ span.red-point.marg {
   top: 6%;
 }
 #sec-cart {
-  top: 20%;
+  top: 19%;
   left: 10%;
   transform: translateY(0px);
   transition: 0.2s;
@@ -1454,7 +1454,7 @@ span.red-point.marg {
   left: 25%;
 }
 #thi-cart {
-  top: 34%;
+  top: 32%;
   left: 15%;
   transform: translateY(0px);
   transition: 0.2s;
@@ -1472,7 +1472,7 @@ span.red-point.marg {
   transform: translateY(-70px);
 }
 #fi-cart {
-  top: 58%;
+  top: 61%;
   left: 25%;
   transform: translateY(0px);
   transition: 0.2s;
@@ -1482,7 +1482,7 @@ span.red-point.marg {
 }
 #sx-cart {
   left: 30%;
-  top: 70%;
+  top: 74%;
   transform: translateY(0px);
   transition: 0.2s;
 }
@@ -1844,8 +1844,8 @@ span.slid-name p {
 .slider-brand {
   height: 418px;
   margin-bottom: 25px !important;
-  margin-top: -50px;
-  overflow: visible !important;
+  margin-top: 0px;
+  overflow: visible;
 }
 .slider-brand:focus {
   outline: none;
@@ -1885,6 +1885,7 @@ span.slid-name p {
   display: inline-table;
 }
 .slider-brand .discount {
+  margin-top: 9px;
   color: #efefef;
   font-family: 'Roboto Slab', serif;
   font-size: 30px;
@@ -1963,6 +1964,7 @@ span.slid-name p {
 .slider-brand .slick-dots li button:before {
   width: 12px;
   height: 12px;
+  color: transparent;
 }
 .slide-brand {
   height: 418px;
@@ -1980,6 +1982,47 @@ span.slid-name p {
   width: 40%;
   bottom: -33px;
   height: 115%;
+}
+.slide-brand-right .outer-brand {
+  position: absolute;
+  right: 13.5%;
+}
+.slide-brand-right img {
+  height: auto;
+  left: 200px;
+}
+.slide-brand-left img {
+  right: 200px;
+  height: auto;
+}
+.slide2 img {
+  width: 30%;
+  bottom: 45px;
+}
+.slide3 img {
+  width: 22%;
+  bottom: -121px;
+  height: 129%;
+}
+.slide4 img {
+  width: 24%;
+  height: 108%;
+}
+.slide5 img {
+  bottom: 18%;
+}
+.slide6 img {
+  bottom: 38px;
+}
+.slide7 img {
+  bottom: 45px;
+}
+.slide8 img {
+  bottom: 55px;
+}
+.slide9 img {
+  right: 0;
+  bottom: 58px;
 }
 span.next_1,
 span.prev_1 {
@@ -2304,7 +2347,6 @@ span.foot-switch {
   margin-bottom: 25px;
   font-weight: 400;
   line-height: 22px;
-  color: white;
   background-color: #ac0000;
   /*max-width: 207px;*/
   /*width: 100%;*/
@@ -4322,7 +4364,6 @@ span.foot-switch {
   .ul-cont {
     width: 50%;
     padding-left: 10px;
-    text-align: left;
   }
   .ul-cont-last {
     width: 50%;
@@ -4981,7 +5022,7 @@ span.foot-switch {
 }
 .wave-what {
   position: absolute;
-  bottom: -5px;
+  bottom: -12px;
   z-index: 100;
   width: 100%;
 }

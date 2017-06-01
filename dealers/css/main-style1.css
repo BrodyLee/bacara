@@ -205,6 +205,8 @@ body h6 {
 }
 .product {
   margin-top: 260px;
+  position: relative;
+  z-index: 100;
 }
 .product h2 {
   color: #1e1e1e;
@@ -426,12 +428,13 @@ body h6 {
 }
 .what_it_is:after {
   content: '';
-  background: url('../img/Untitledwawe3.png');
+  background: url('../img/line-shadow.png');
   width: 100%;
-  height: 15px;
+  height: 30px;
   display: block;
   position: relative;
-  bottom: -65px;
+  z-index: 100;
+  bottom: -60px;
 }
 .what_it_is h2 {
   margin-top: 60px;
@@ -590,7 +593,8 @@ body h6 {
   height: 1%;
   animation-duration: 3s;
   z-index: 0;
-  background: url("../img/border-line.png") repeat-x;
+  background: url("../img/border-line.png");
+  background-repeat: no-repeat;
 }
 .what_it_is .border-line_1 {
   top: 598px;
@@ -607,7 +611,7 @@ body h6 {
 .what_it_is .border-line_3l {
   background: url("../img/border-circle.png") no-repeat !important;
   top: 707px;
-  left: -6px;
+  left: 15px;
   width: 50%;
   height: 107% !important;
   transform: rotate(5deg);
@@ -1268,12 +1272,12 @@ body h6 {
   font-weight: 700;
   height: 594px;
   padding: 1px 20px 30px 58px;
-  box-shadow: 0 2px 38px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 86px rgba(0, 0, 0, 0.3);
 }
 .form:before {
   content: '';
   position: absolute;
-  background: url("../img/Untitledwawe.png") no-repeat;
+  background: url("../img/Untitledwawe.png");
   left: 0;
   top: -10px;
   width: 100%;
@@ -1282,7 +1286,7 @@ body h6 {
 .form:after {
   content: '';
   position: absolute;
-  background: url("../img/Untitledwawe.png") no-repeat;
+  background: url("../img/Untitledwawe.png");
   left: 0;
   bottom: -10px;
   width: 100%;

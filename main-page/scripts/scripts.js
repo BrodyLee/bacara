@@ -38,7 +38,6 @@ $(document).ready(function(){
     // Запускаем плагин карусели
     carousel.owlCarousel({
         items: 4,
-
     });
 
 

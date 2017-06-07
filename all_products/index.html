@@ -370,7 +370,7 @@
                     </label>
 
                     <input type="radio" class="radio bug_input af" id="af" name="coffee" checked>
-                    <label for="af" class="problem-lb">
+                    <label for="af" class="problem-lb active">
                         0,2кг (в зернах)
                     </label>
 
@@ -400,11 +400,15 @@
                         <label for="df1">
                             1кг (в зернах)
                         </label>
-
+                        <div>
                         <input type="radio" class="radio bug_input af" id="af1" name="coffee" checked>
-                        <label for="af1" class="problem-lb">
+                        <label for="af1" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
+                        <div class="check">
+                            <div class="inside"></div>
+                        </div>
+                        </div>
 
                         <input type="radio" class="radio bf" id="bf1" name="coffee">
                         <label for="bf1"  >
@@ -434,7 +438,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af2" name="coffee" checked>
-                        <label for="af2" class="problem-lb">
+                        <label for="af2" class="problem-lb  active">
                             0,2кг (в зернах)
                         </label>
 
@@ -467,7 +471,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af3" name="coffee" checked>
-                        <label for="af3" class="problem-lb">
+                        <label for="af3" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -513,7 +517,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af11" name="coffee" checked>
-                        <label for="af11" class="problem-lb">
+                        <label for="af11" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -545,7 +549,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af122" name="coffee" checked>
-                        <label for="af122" class="problem-lb">
+                        <label for="af122" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -577,7 +581,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af222" name="coffee" checked>
-                        <label for="af222" class="problem-lb">
+                        <label for="af222" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -610,7 +614,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af322" name="coffee" checked>
-                        <label for="af322" class="problem-lb">
+                        <label for="af322" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -648,7 +652,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af1112" name="coffee" checked>
-                        <label for="af1112" class="problem-lb">
+                        <label for="af1112" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -680,7 +684,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af12222" name="coffee" checked>
-                        <label for="af12222" class="problem-lb">
+                        <label for="af12222" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -712,7 +716,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af22232" name="coffee" checked>
-                        <label for="af22232" class="problem-lb">
+                        <label for="af22232" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -745,7 +749,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af32242" name="coffee" checked>
-                        <label for="af32242" class="problem-lb">
+                        <label for="af32242" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -782,7 +786,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af116" name="coffee" checked>
-                        <label for="af116" class="problem-lb">
+                        <label for="af116" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -814,7 +818,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af1226" name="coffee" checked>
-                        <label for="af1226" class="problem-lb">
+                        <label for="af1226" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -846,7 +850,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af2226" name="coffee" checked>
-                        <label for="af2226" class="problem-lb">
+                        <label for="af2226" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -879,7 +883,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af3228" name="coffee" checked>
-                        <label for="af3228" class="problem-lb">
+                        <label for="af3228" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -1218,6 +1222,12 @@
             slidesToScroll: 1
         });
 
+    </script>
+    <script>
+        $('.item_cafe-flex label').click(function () {
+            $('.item_cafe-flex label').removeClass('active');
+            $(this).addClass('active');
+        });
     </script>
     <script>
         $('.slider-brand').slick({

@@ -1922,6 +1922,8 @@ span.slid-name p {
 .slide-brand-right .outer-brand {
   position: absolute;
   right: 13.5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .slide-brand-right img {
   height: auto;
@@ -1942,7 +1944,7 @@ span.slid-name p {
   }
 }
 .slide3 img {
-  width: 22%;
+  width: 19%;
   bottom: -121px;
   height: 129%;
 }

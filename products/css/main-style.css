@@ -58,7 +58,7 @@ body .radio:not(checked) + label:before {
   border-radius: 50%;
   background: #FFF;
 }
-body .radio:not(checked) + label:after {
+body .radio:not(checked) + label.active:after {
   content: '';
   position: absolute;
   top: 7px;
@@ -68,10 +68,9 @@ body .radio:not(checked) + label:after {
   background-color: #ac0000;
   border-radius: 50%;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
-  opacity: 0;
   transition: all .2s;
 }
-body .radio:checked + label:after {
+body .radio:checked + label.active:after {
   opacity: 1;
 }
 .item_cafe-flex {

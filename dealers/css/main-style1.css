@@ -204,7 +204,7 @@ body h6 {
   line-height: 33px;
 }
 .product {
-  margin-top: 260px;
+  margin-top: 155px;
   position: relative;
   z-index: 100;
 }
@@ -1271,8 +1271,11 @@ body h6 {
   position: relative;
   font-weight: 700;
   height: 594px;
-  padding: 1px 20px 30px 58px;
+  padding: 0;
   box-shadow: 0 0 86px rgba(0, 0, 0, 0.3);
+}
+.form-outer {
+  padding: 1px 20px 30px 58px;
 }
 .form:before {
   content: '';

@@ -751,7 +751,7 @@ button {
   background: url("../images/arrow-menu.png") no-repeat;
   background-position: 30px 0;
   position: absolute;
-  margin-left: -2px;
+  left: 230px;
   top: -10px;
   width: 81px;
   height: 20px;
@@ -981,6 +981,7 @@ span.red-point {
 .borders {
   position: absolute;
   border-top: 1px dashed red;
+  background-repeat: no-repeat;
   width: 20%;
   height: 1%;
   animation-duration: 3s;
@@ -998,7 +999,6 @@ span.red-point {
 .second-brd {
   transform: rotate(-9deg);
   background-image: url(../images/border.png);
-  background-repeat-y: no-repeat;
   border: none;
   right: 39.5%;
   top: 20.5%;
@@ -1018,7 +1018,6 @@ span.red-point {
 .firth-brd {
   transform: rotate(-7deg);
   background-image: url(../images/border.png);
-  background-repeat-y: no-repeat;
   border: none;
   left: 35%;
   bottom: 38.5%;
@@ -1027,7 +1026,6 @@ span.red-point {
 .fifth-brd {
   transform: rotate(-6deg);
   background-image: url(../images/border.png);
-  background-repeat-y: no-repeat;
   border: none;
   left: 58%;
   bottom: 41.5%;
@@ -2054,6 +2052,8 @@ span.slid-name p {
     .outer-brand {
       position: absolute;
       right: 13.5%;
+      top: 50%;
+      transform: translateY(-50%);
     }
     img {
       height: auto;
@@ -2082,7 +2082,7 @@ span.slid-name p {
 
 .slide3 {
   img {
-    width: 22%;
+    width: 19%;
     bottom: -121px;
     height: 129%;
     @media (max-width: 768px) {

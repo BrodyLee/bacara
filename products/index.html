@@ -140,14 +140,14 @@
                                                     <div class="order-options">
                                                         <ul class="row">
                                                             <li class="col-xs-12 col-md-4">
-                                                                <input id="first" name="coffe-radio1" type="radio" checked>
+                                                                <input id="first" name="coffe-radio1" type="radio" >
                                                                 <label for="first">1 кг (зерно)</label>
                                                                 <div class="check">
                                                                     <div class="inside"></div>
                                                                 </div>
                                                             </li>
                                                             <li class="col-xs-12 col-md-4">
-                                                                <input id="second" name="coffe-radio1" type="radio">
+                                                                <input id="second" name="coffe-radio1" type="radio" checked>
                                                                 <label for="second">0,2 кг (зерно)</label>
                                                                 <div class="check">
                                                                     <div class="inside"></div>
@@ -372,7 +372,7 @@
                     </label>
 
                     <input type="radio" class="radio bug_input af" id="af" name="coffee">
-                    <label for="af" class="problem-lb">
+                    <label for="af" class="problem-lb active">
                         0,2кг (в зернах)
                     </label>
 
@@ -404,7 +404,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af1" name="coffee">
-                        <label for="af1" class="problem-lb">
+                        <label for="af1" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -436,7 +436,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af2" name="coffee">
-                        <label for="af2" class="problem-lb">
+                        <label for="af2" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -469,7 +469,7 @@
                         </label>
 
                         <input type="radio" class="radio bug_input af" id="af3" name="coffee">
-                        <label for="af3" class="problem-lb">
+                        <label for="af3" class="problem-lb active">
                             0,2кг (в зернах)
                         </label>
 
@@ -650,6 +650,12 @@
             slidesToShow: 1,
             slidesToScroll: 1,
 //            autoplay: true
+        });
+    </script>
+    <script>
+        $('.item_cafe-flex label').click(function () {
+            $('.item_cafe-flex label').removeClass('active');
+            $(this).addClass('active');
         });
     </script>
     <script>

@@ -63,9 +63,15 @@
                                 <li><a href=""><img src="images/fb.jpg" alt=""></a></li>
                                 <li><a href=""><img src="images/inst.jpg" alt=""></a></li>
                             </ul>
-                            <div>
-                                <span class="number">066 413 5999</span>
-                                <span id="switcher"><img src="images/switcher.jpg" alt=""></span>
+                            <div id="accordion">
+                                <div class="number-select">
+                                    <a href="tel:066 41 35 999" class="number">066 413 5999</a>
+                                    <span id="switcher"><img src="images/switcher.jpg" alt=""></span>
+                                </div>
+                                <div class="number-drop">
+                                    <a href="tel:096  888  8888">096  888  8888</a>
+                                    <a href="tel:063  888  8888">063  888  8888</a>
+                                </div>
                             </div>
                         </div>
                         <div class="row text-right language-head">
@@ -750,6 +756,10 @@
                 jQuery('.basket_xs_sm').removeClass('fixed_xs_sm');
             }
         });
+        $('#switcher').click(function () {
+            $('#switcher img').toggleClass('active-arrow');
+            $('.number-drop').toggle();
+        })
     </script>
     <script>
         $('.single-item').slick({

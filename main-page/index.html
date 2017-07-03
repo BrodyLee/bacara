@@ -66,9 +66,15 @@
 							<li><a href=""><img src="images/fb.jpg" alt=""></a></li>
 							<li><a href=""><img src="images/inst.jpg" alt=""></a></li>
 						</ul>
-						<div>
-							<span class="number">066 413 5999</span>
-							<span id="switcher"><img src="images/switcher.jpg" alt=""></span>
+						<div id="accordion">
+							<div class="number-select">
+								<a href="tel:066 41 35 999" class="number">066 413 5999</a>
+								<span id="switcher"><img src="images/switcher.jpg" alt=""></span>
+							</div>
+							<div class="number-drop">
+								<a href="tel:096  888  8888">096  888  8888</a>
+								<a href="tel:063  888  8888">063  888  8888</a>
+							</div>
 						</div>
 						</div>
 						<div class="row text-right language-head">
@@ -105,7 +111,7 @@
 					<img src="images/Untitled-11.jpg" alt="" class="img-responsive">
 				</div>
 				<div class="uadeveloper">
-						<p class="ua-dev">Український виробник кави  з <br> найшвидшими темпами розвитку</p>
+						<p class="ua-dev">Український виробник cвіжообсмаженої кави  з <br> найшвидшими темпами розвитку</p>
 						<p class="we-are">Ми бадьоримо  15000 українців щодня</p>
 						<button id="try-coffe" type="button" data-toggle="modal" data-target="#myModal">Спробувати каву безкоштовно</button>
 				</div>
@@ -119,7 +125,7 @@
 								<div class="horhed-text">
 									<p class="deal-op">Для HoReCa</p>
 									<p class="deal-op-h4">Піднімайте продажі кави на 30% у своєму регіони щомісяця</p>
-									<button class="deal-op" id="deal-btn">Для HoReCa</button>
+									<button class="deal-op deal-op-green" id="deal-btn">Для HoReCa</button>
 								</div>
 					</div>
 					<div class="hd-wh"></div>
@@ -934,7 +940,7 @@
 					<div class="horhed-text">
 						<p class="deal-op">Для HoReCa</p>
 						<p class="deal-op-h4">Піднімайте продажі кави на 30% у своєму регіони щомісяця</p>
-						<button class="deal-op" id="deal-btn">Для HoReCa</button>
+						<button class="deal-op deal-op-green" id="deal-btn">Для HoReCa</button>
 					</div>
 				</div>
 				<div class="hd-wh"></div>
@@ -955,27 +961,27 @@
 						<div class="inst-gal">
 							<div class="inst-part f-pict">
 								<a class="gallery-item" href="images/gal-2.jpg">
-								<img src="images/gal-2.jpg" alt="">
+								<!--<img src="images/gal-2.jpg" alt="">-->
 								</a>
 							</div>
 							<div class="inst-part sc-pict">
 								<a class="gallery-item" href="images/gal-3.jpg">
-								<img src="images/gal-3.jpg" alt="">
+								<!--<img src="images/gal-3.jpg" alt="">-->
 								</a>
 							</div>
 							<div class="inst-part tr-pict">
 								<a class="gallery-item" href="images/ga1-1.jpg">
-								<img src="images/ga1-1.jpg" alt="">
+								<!--<img src="images/ga1-1.jpg" alt="">-->
 								</a>
 							</div>
 							<div class="inst-part fo-pict">
 								<a class="gallery-item" href="images/gal-4.jpg">
-								<img src="images/gal-4.jpg" alt="">
+								<!--<img src="images/gal-4.jpg" alt="">-->
 								</a>
 							</div>
 							<div class="inst-part fi-pict">
 								<a class="gallery-item" href="images/Untitled-8.jpg">
-								<img src="images/Untitled-8.jpg" alt="">
+								<!--<img src="images/Untitled-8.jpg" alt="">-->
 								</a>
 							</div>
 						</div>
@@ -1226,6 +1232,15 @@
 	</script>
 
 	<script>
+        $('#switcher').click(function () {
+            $('#switcher img').toggleClass('active-arrow');
+            $('.number-drop').toggle();
+        })
+	</script>
+
+	<script>
+
+
 
 	var slideIndex=2;
 	showSlides(slideIndex);
@@ -1303,6 +1318,178 @@ $(document).ready(function(){
 //			autoplay: true
         });
 	</script>
+	<script>
+
+
+
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".f-pict").width();
+            var height =  $(".f-pict").height();
+
+            var instcol = $('.f-pict');
+            if( width != height) {
+                var wid_count = width - 20;
+                $('.f-pict').css({
+                    'height': wid_count
+                })
+            }
+        });
+
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".sc-pict").width();
+            var height =  $(".sc-pict").height();
+
+            if( width != height) {
+                var wid_count = width - 10;
+                $('.sc-pict').css({
+                    'height': wid_count
+                })
+            }
+        });
+
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".tr-pict").width();
+            var height =  $(".tr-pict").height();
+
+            var instcol = $('.tr-pict');
+            if( width != height) {
+                console.log(width);
+                instcol.css({
+                    'height': width
+                })
+            }
+        });
+
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".fo-pict").width();
+            var height =  $(".fo-pict").height();
+
+//            var instcol = $('.fo-pict');
+            if( width != height) {
+                var wid_count = width - 10;
+                $('.fo-pict').css({
+                    'height': wid_count
+//                    'width' : wid_count
+                })
+            }
+        });
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".fi-pict").width();
+            var height =  $(".fi-pict").height();
+
+            var instcol = $('.fi-pict');
+            if( width != height) {
+                var wid_count = width - 20;
+                $('.fi-pict').css({
+                    'height': wid_count
+//                    'width' : wid_count
+                })
+            }
+        });
+
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var heiPart =  $(".tr-pict").height();
+            var heiGal =  $(".inst-gal").height();
+
+            if( heiPart != heiGal) {
+                $('.inst-gal').css({
+                    'height': heiPart
+                })
+            }
+        });
+
+
+	</script>
+	<script>
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".f-pict").width();
+            var height =  $(".f-pict").height();
+
+
+            if( width != height) {
+               var wid_count = width - 20;
+               $('.f-pict').css({
+                   'height': wid_count
+//				   'width' : wid_count
+			   })
+            }
+        });
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".sc-pict").width();
+            var height =  $(".sc-pict").height();
+
+            var instcol = $('.sc-pict');
+            if( width != height) {
+                var wid_count = width - 10;
+                $('.sc-pict').css({
+                    'height': wid_count
+//                    'width' : wid_count
+                })
+            }
+        });
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".tr-pict").width();
+            var height =  $(".tr-pict").height();
+
+            var instcol = $('.tr-pict');
+            if( width != height) {
+                instcol.css({
+                    'height': width
+                })
+            }
+        });
+
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".fo-pict").width();
+            var height =  $(".fo-pict").height();
+
+            var instcol = $('.fo-pict');
+            if( width != height) {
+                var wid_count = width - 10;
+                $('.fo-pict').css({
+                    'height': wid_count
+//                    'width' : wid_count
+                })
+            }
+        });
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".fi-pict").width();
+            var height =  $(".fi-pict").height();
+
+            var instcol = $('.fi-pict');
+            if( width != height) {
+                var wid_count = width - 10;
+                $('.fi-pict').css({
+                    'height': wid_count
+//                    'width' : wid_count
+                })
+            }
+        });
+
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var heiPart =  $(".tr-pict").height();
+            var heiGal =  $(".inst-gal").height();
+
+            if( heiPart != heiGal) {
+                $('.inst-gal').css({
+                    'height': heiPart
+                })
+            }
+        });
+	</script>
+
 
 	<script>
         'use strict';

@@ -26,8 +26,15 @@
                 <div>
                 <img src="img/logo/logo_head.png" alt="logo">
                 </div>
-                <div>
-                    <a href="#">066 413 5999 <i class="phone-ico"></i></a>
+                <div id="accordion">
+                    <div class="number-select">
+                        <a href="tel:066 41 35 999" class="number">066 413 5999</a>
+                        <span id="switcher"><img src="images/switcher.png" alt=""></span>
+                    </div>
+                    <div class="number-drop">
+                        <a href="tel:096  888  8888">096  888  8888</a>
+                        <a href="tel:063  888  8888">063  888  8888</a>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -951,27 +958,27 @@
         <div class="inst-gal">
             <div class="inst-part f-pict">
                 <a class="gallery-item" href="img/inst/inst_3.jpg">
-                    <img src="img/inst/inst_3.jpg" alt="">
+                    <!--<img src="img/inst/inst_3.jpg" alt="">-->
                 </a>
             </div>
             <div class="inst-part sc-pict">
                 <a class="gallery-item" href="img/inst/inst_4.jpg">
-                    <img src="img/inst/inst_4.jpg" alt="">
+                    <!--<img src="img/inst/inst_4.jpg" alt="">-->
                 </a>
             </div>
             <div class="inst-part tr-pict">
                 <a class="gallery-item" href="img/inst/inst_2.jpg">
-                    <img src="img/inst/inst_2.jpg" alt="">
+                    <!--<img src="img/inst/inst_2.jpg" alt="">-->
                 </a>
             </div>
             <div class="inst-part fo-pict">
                 <a class="gallery-item" href="img/inst/inst_5.jpg">
-                    <img src="img/inst/inst_5.jpg" alt="">
+                    <!--<img src="img/inst/inst_5.jpg" alt="">-->
                 </a>
             </div>
             <div class="inst-part fi-pict">
                 <a class="gallery-item" href="img/inst/inst_1.jpg">
-                    <img src="img/inst/inst_1.jpg" alt="">
+                    <!--<img src="img/inst/inst_1.jpg" alt="">-->
                 </a>
             </div>
         </div>
@@ -1218,7 +1225,184 @@
             slidesToShow: 1,
             slidesToScroll: 1
         });
+        $('#switcher').click(function () {
+            $('#switcher img').toggleClass('active-arrow');
+            $('.number-drop').toggle();
+        })
     </script>
+
+    <script>
+
+
+
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".f-pict").width();
+            var height =  $(".f-pict").height();
+
+            var instcol = $('.f-pict');
+            if( width != height) {
+                var wid_count = width - 20;
+                $('.f-pict').css({
+                    'height': wid_count
+                })
+            }
+        });
+
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".sc-pict").width();
+            var height =  $(".sc-pict").height();
+
+            if( width != height) {
+                var wid_count = width - 10;
+                $('.sc-pict').css({
+                    'height': wid_count
+                })
+            }
+        });
+
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".tr-pict").width();
+            var height =  $(".tr-pict").height();
+
+            var instcol = $('.tr-pict');
+            if( width != height) {
+                console.log(width);
+                instcol.css({
+                    'height': width
+                })
+            }
+        });
+
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".fo-pict").width();
+            var height =  $(".fo-pict").height();
+
+//            var instcol = $('.fo-pict');
+            if( width != height) {
+                var wid_count = width - 10;
+                $('.fo-pict').css({
+                    'height': wid_count
+//                    'width' : wid_count
+                })
+            }
+        });
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".fi-pict").width();
+            var height =  $(".fi-pict").height();
+
+            var instcol = $('.fi-pict');
+            if( width != height) {
+                var wid_count = width - 20;
+                $('.fi-pict').css({
+                    'height': wid_count
+//                    'width' : wid_count
+                })
+            }
+        });
+
+        $(document).ready(function(){
+            // var windowWidth = $(window).width();
+            var heiPart =  $(".tr-pict").height();
+            var heiGal =  $(".inst-gal").height();
+
+            if( heiPart != heiGal) {
+                $('.inst-gal').css({
+                    'height': heiPart
+                })
+            }
+        });
+
+
+    </script>
+    <script>
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".f-pict").width();
+            var height =  $(".f-pict").height();
+
+
+            if( width != height) {
+                var wid_count = width - 20;
+                $('.f-pict').css({
+                    'height': wid_count
+//				   'width' : wid_count
+                })
+            }
+        });
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".sc-pict").width();
+            var height =  $(".sc-pict").height();
+
+            var instcol = $('.sc-pict');
+            if( width != height) {
+                var wid_count = width - 10;
+                $('.sc-pict').css({
+                    'height': wid_count
+//                    'width' : wid_count
+                })
+            }
+        });
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".tr-pict").width();
+            var height =  $(".tr-pict").height();
+
+            var instcol = $('.tr-pict');
+            if( width != height) {
+                instcol.css({
+                    'height': width
+                })
+            }
+        });
+
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".fo-pict").width();
+            var height =  $(".fo-pict").height();
+
+            var instcol = $('.fo-pict');
+            if( width != height) {
+                var wid_count = width - 10;
+                $('.fo-pict').css({
+                    'height': wid_count
+//                    'width' : wid_count
+                })
+            }
+        });
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var width =  $(".fi-pict").width();
+            var height =  $(".fi-pict").height();
+
+            var instcol = $('.fi-pict');
+            if( width != height) {
+                var wid_count = width - 10;
+                $('.fi-pict').css({
+                    'height': wid_count
+//                    'width' : wid_count
+                })
+            }
+        });
+
+        $(window).resize(function(){
+            // var windowWidth = $(window).width();
+            var heiPart =  $(".tr-pict").height();
+            var heiGal =  $(".inst-gal").height();
+
+            if( heiPart != heiGal) {
+                $('.inst-gal').css({
+                    'height': heiPart
+                })
+            }
+        });
+    </script>
+
     <script>
         var carousel = $("#carousel");
 

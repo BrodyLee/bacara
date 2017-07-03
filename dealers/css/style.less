@@ -289,6 +289,65 @@ button {
     }
   }
 }
+
+#accordion {
+  position: relative;
+  a {
+    text-shadow: 0 3px 6.2px rgba(35, 31, 32, 0.3);
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .number-select {
+    width: auto;
+  }
+  .active-arrow {
+    transform: rotate(180deg);
+    margin-top: -5px;
+  }
+}
+
+.number-drop {
+  display: none;
+  z-index: 100;
+  width: 127px;
+  height: 57px;
+  background: #000;
+  padding: 8px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  &:before{
+    content: '';
+    position: absolute;
+    background: url("../img/number-arrow.png");
+    width: 14px;
+    height: 6px;
+    top: -5px;
+    left: 61px;
+
+  }
+  a {
+    text-shadow: 0 3px 6.2px rgba(35, 31, 32, 0.3);
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#switcher {
+  margin-left: 5px;
+}
+
+
 .top-navs {
   width: 52%;
   float: left;
@@ -296,7 +355,8 @@ button {
 }
 .nav-sites {
   float: left;
-
+  position: relative;
+  z-index: 101;
 }
 .nav-sites ul,
 .main-nav ul {
@@ -312,6 +372,7 @@ button {
 .main-nav ul li{
   position: relative;
   float: left;
+  z-index: 100;
 }
 .nav-sites ul li a,
 .main-nav ul li a {
@@ -747,12 +808,12 @@ button {
   //border: 12px solid transparent;
   //border-bottom: 12px solid #b2b2b2;
   background: url("../images/arrow-menu.png") no-repeat;
-  background-position: 30px 0;
+  background-position: 260px 45px;
   position: absolute;
-  margin-left: -2px;
-  top: -10px;
-  width: 81px;
-  height: 20px;
+  left: 0px;
+  top: -55px;
+  width: 545px;
+  height: 56px;
 
 }
 .why-bacara {
@@ -2063,7 +2124,7 @@ span.slid-name p {
 
 .slide3 {
   img {
-    width: 19%;
+    width: 15%;
     bottom: -121px;
     height: 129%;
     @media (max-width: 768px) {
@@ -2200,16 +2261,40 @@ span.prev_1 {
 
 }
 .inst-logo {
-  margin-bottom: 0px;
+  margin-bottom: 25px;
   text-align: center;
 }
 .inst-logo img {
   margin: 0 auto;
 }
+
 .inst-part {
+  border: 2px solid white;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.47);
   width: 25%;
   position: absolute;
+  float: left;
   background-color:white;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  &:hover:after {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
 }
 .inst-part img{
   width: 100%;
@@ -2222,41 +2307,59 @@ span.prev_1 {
   opacity: 0.48;
 }
 .inst-gal {
-  height: 300px;
   position: relative;
+  top:2px;
   .col-xs-12 {
     background: white !important;
   }
 }
 .f-pict {
-  left: 38%;
-  bottom: 0;
-  z-index: 10;
-  height: 290px;
-}
-.sc-pict {
-  bottom: 0;
-  right: 15%;
-  z-index: 2;
-  height: 280px;
-}
-.tr-pict {
-  left: 15%;
-  bottom: 0;
-  z-index: 2;
-  height: 280px;
-}
-.fo-pict {
-  right: -5%;
-  bottom: 0;
-  z-index: 1;
-  height: 270px;
-}
-.fi-pict {
   left: -5%;
   bottom: 0;
   z-index: 1;
-  height: 270px;
+  //height: 320px;
+  min-width: 290px;
+  background-image: url("../images/gal-3.jpg");
+  top:20px;
+}
+.sc-pict {
+  bottom: 0;
+  left: 15%;
+  z-index: 2;
+  background-image: url("../img/ins1.jpg");
+  //height: 310px;
+  min-width: 310px;
+  //width: 310px;
+  top:10px;
+}
+.tr-pict {
+  left: 38%;
+  bottom: 0;
+  z-index: 10;
+  //height: 310px;
+  //width: 311px;
+  min-width: 320px;
+  background-image: url("../img/ins2.jpg");
+}
+.fo-pict {
+  right: 15%;
+  bottom: 0;
+  z-index: 2;
+  //height: 290px;
+  //width: 290px;
+  min-width: 310px;
+  background-image: url("../img/inst3.jpg");
+  top:10px;
+}
+.fi-pict {
+  right: -5%;
+  bottom: 0;
+  z-index: 1;
+  //height: 290px;
+  //width: 290px;
+  min-width: 290px;
+  background-image: url("../img/inst4.jpg");
+  top:20px;
 }
 footer {
   width: 100%;
@@ -2266,6 +2369,7 @@ footer {
   color: #b4b4b4;
   font-family: 'Myriad Pro', sans-serif;
   position: relative;
+  z-index: 100;
 }
 .bot-logo {
   text-align: center;

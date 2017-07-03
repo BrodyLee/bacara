@@ -220,7 +220,7 @@ button {
 .whatsay .slide_1 {
   color: white;
   background: url("../images/review-eugen.png") no-repeat;
-  background-size: 50% 103%;
+  background-size: 650px 103%;
   background-position: -5px 0px;
 }
 .whatsay .slide_1 img {
@@ -230,7 +230,7 @@ button {
   color: white;
   background: url("../images/review-marina.png") no-repeat;
   background-position: -5px -4px;
-  background-size: 50% 103%;
+  background-size: 650px 103%;
 }
 .whatsay .slide_2 p {
   margin-bottom: 70px;
@@ -248,7 +248,7 @@ button {
 .whatsay .slide_4 {
   color: white;
   background: url("../images/review-andriy.png") no-repeat;
-  background-size: 50% 103%;
+  background-size: 650px 103%;
   background-position: -5px -6px;
 }
 .whatsay .slide_4 img {
@@ -260,7 +260,7 @@ button {
 .whatsay .slide_5 {
   color: white;
   background: url("../images/review-arthur.png") no-repeat;
-  background-size: 50% 103%;
+  background-size: 650px 103%;
   background-position: -5px -2px;
   overflow: hidden;
 }
@@ -277,6 +277,8 @@ button {
 }
 .nav-sites {
   float: left;
+  position: relative;
+  z-index: 101;
 }
 .nav-sites ul,
 .main-nav ul {
@@ -292,6 +294,7 @@ button {
 .main-nav ul li {
   position: relative;
   float: left;
+  z-index: 100;
 }
 .nav-sites ul li a,
 .main-nav ul li a {
@@ -312,6 +315,10 @@ button {
 .main-nav ul li a:hover #popup-mag {
   background-color: #282828;
   text-decoration: none;
+}
+#popup-mag {
+  position: relative;
+  z-index: 102;
 }
 .nav-sites ul li a {
   padding: 5px 10px;
@@ -391,6 +398,52 @@ button {
   margin-top: 6px;
   margin-left: 7px;
 }
+#accordion {
+  position: relative;
+}
+#accordion a {
+  text-shadow: 0 3px 6.2px rgba(35, 31, 32, 0.3);
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+#accordion a:hover {
+  text-decoration: none;
+}
+#accordion .active-arrow {
+  transform: rotate(180deg);
+  margin-top: -5px;
+}
+.number-drop {
+  display: none;
+  z-index: 100;
+  width: 127px;
+  height: 57px;
+  background: #000;
+  padding: 8px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+.number-drop:before {
+  content: '';
+  position: absolute;
+  background: url("../img/number-arrow.png");
+  width: 14px;
+  height: 6px;
+  top: -5px;
+  left: 61px;
+}
+.number-drop a {
+  text-shadow: 0 3px 6.2px rgba(35, 31, 32, 0.3);
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.number-drop a:hover {
+  text-decoration: underline;
+}
 .social {
   width: 106px;
   float: right;
@@ -443,9 +496,10 @@ button {
   opacity: 1;
 }
 .uadeveloper {
-  width: 65%;
+  width: 80%;
   height: 400px;
-  position: fixed;
+  position: absolute;
+  transform: translate(0%, 0%) !important;
   top: 180px;
   color: white;
   z-index: 0;
@@ -486,7 +540,8 @@ button {
   position: relative;
 }
 .top-par {
-  position: fixed;
+  position: absolute;
+  transform: translate(0%, 0%) !important;
 }
 .header-bot {
   width: 90%;
@@ -586,6 +641,9 @@ button {
   transform: translateY(0px);
   transition: 0.2s;
   opacity: 0;
+}
+.deal-op-green {
+  background-color: #2e982e !important;
 }
 .head-bac button {
   width: 297px;
@@ -714,12 +772,12 @@ button {
 .dropdown:before {
   content: '';
   background: url("../images/arrow-menu.png") no-repeat;
-  background-position: 30px 0;
+  background-position: 260px 45px;
   position: absolute;
-  left: 230px;
-  top: -10px;
-  width: 81px;
-  height: 20px;
+  left: 0px;
+  top: -55px;
+  width: 545px;
+  height: 56px;
 }
 .why-bacara {
   width: 90%;
@@ -776,6 +834,7 @@ button {
   perspective: 221px;
   transform: skew(7deg);
   transition: 0.2s;
+  width: 55%;
 }
 .skew-part:hover h4 {
   transform: rotate(0);
@@ -787,8 +846,10 @@ button {
   color: black;
   margin-bottom: 18px !important;
   padding-left: 0 !important;
-  padding-right: 40% !important;
+  padding-right: 0 !important;
   transform: rotate(-5deg);
+  margin-top: 2px;
+  width: 100%;
 }
 .no-skew {
   transform: skew(0deg);
@@ -848,6 +909,7 @@ button {
   top: 5%;
   right: 35%;
   animation-duration: 2s;
+  z-index: 3;
 }
 #secont-part .new {
   position: absolute;
@@ -1176,6 +1238,8 @@ span.red-point.marg {
   font-weight: 400;
   line-height: 24px;
   color: black;
+  background-color: white;
+  padding: 25px 20px;
 }
 .par-brdright {
   width: 50%;
@@ -1211,7 +1275,7 @@ span.red-point.marg {
   width: 40%;
   height: 220px;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   left: 7%;
   top: 10%;
 }
@@ -1248,8 +1312,7 @@ span.red-point.marg {
   height: 170px;
   right: 5%;
   top: 30%;
-  z-index: 1;
-  padding: 10px;
+  z-index: 10;
 }
 #fo-abs {
   width: 40%;
@@ -1432,7 +1495,6 @@ span.red-point.marg {
   font-weight: bold;
 }
 .carts {
-  width: 70%;
   position: absolute;
   height: 190px;
   font-family: 'RobotoSlab Bold', sans-serif;
@@ -2010,7 +2072,7 @@ span.slid-name p {
   }
 }
 .slide3 img {
-  width: 19%;
+  width: 15%;
   bottom: -121px;
   height: 129%;
 }
@@ -2135,16 +2197,39 @@ span.prev_1 {
   padding-top: 123px;
 }
 .inst-logo {
-  margin-bottom: 0px;
+  margin-bottom: 25px;
   text-align: center;
 }
 .inst-logo img {
   margin: 0 auto;
 }
 .inst-part {
+  border: 2px solid white;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.47);
   width: 25%;
   position: absolute;
+  float: left;
   background-color: white;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.inst-part:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 100;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.inst-part:hover:after {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .inst-part img {
   width: 100%;
@@ -2156,41 +2241,50 @@ span.prev_1 {
   opacity: 0.48;
 }
 .inst-gal {
-  height: 300px;
   position: relative;
+  top: 2px;
 }
 .inst-gal .col-xs-12 {
   background: white !important;
 }
 .f-pict {
-  left: 38%;
-  bottom: 0;
-  z-index: 10;
-  height: 290px;
-}
-.sc-pict {
-  bottom: 0;
-  right: 15%;
-  z-index: 2;
-  height: 280px;
-}
-.tr-pict {
-  left: 15%;
-  bottom: 0;
-  z-index: 2;
-  height: 280px;
-}
-.fo-pict {
-  right: -5%;
-  bottom: 0;
-  z-index: 1;
-  height: 270px;
-}
-.fi-pict {
   left: -5%;
   bottom: 0;
   z-index: 1;
-  height: 270px;
+  min-width: 290px;
+  background-image: url("../images/gal-3.jpg");
+  top: 20px;
+}
+.sc-pict {
+  bottom: 0;
+  left: 15%;
+  z-index: 2;
+  background-image: url("../img/ins1.jpg");
+  min-width: 310px;
+  top: 10px;
+}
+.tr-pict {
+  left: 38%;
+  bottom: 0;
+  z-index: 10;
+  min-width: 320px;
+  background-image: url("../img/ins2.jpg");
+}
+.fo-pict {
+  right: 15%;
+  bottom: 0;
+  z-index: 2;
+  min-width: 310px;
+  background-image: url("../img/inst3.jpg");
+  top: 10px;
+}
+.fi-pict {
+  right: -5%;
+  bottom: 0;
+  z-index: 1;
+  min-width: 290px;
+  background-image: url("../img/inst4.jpg");
+  top: 20px;
 }
 footer {
   width: 100%;
@@ -2200,6 +2294,7 @@ footer {
   color: #b4b4b4;
   font-family: 'Myriad Pro', sans-serif;
   position: relative;
+  z-index: 100;
 }
 .bot-logo {
   text-align: center;
@@ -3735,6 +3830,7 @@ span.foot-switch {
   }
   .f-pict {
     height: 225px;
+    background: url('https://scontent-waw1-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c180.0.720.720/19623312_1609885659083367_2946208618569007104_n.jpg') no-repeat;
   }
   .sc-pict {
     height: 210px;
@@ -5066,7 +5162,7 @@ span.foot-switch {
 }
 .white-wave {
   position: absolute;
-  bottom: -5px;
+  bottom: -9px;
   z-index: 100;
   width: 100%;
 }
@@ -5083,7 +5179,7 @@ span.foot-switch {
 }
 .grey-wave {
   position: absolute;
-  top: -5px;
+  top: -9px;
   z-index: 100;
   width: 100%;
 }

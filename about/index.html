@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/main-style.css">
 </head>
 <body>
-
 <header>
     <div class="header-top">
         <div class="header-top-outer">
@@ -51,9 +50,15 @@
                             <li><a href=""><img src="images/fb.jpg" alt=""></a></li>
                             <li><a href=""><img src="images/inst.jpg" alt=""></a></li>
                         </ul>
-                        <div>
-                            <span class="number">066 413 5999</span>
-                            <span id="switcher"><img src="images/switcher.jpg" alt=""></span>
+                        <div id="accordion">
+                            <div class="number-select">
+                                <a href="tel:066 41 35 999" class="number">066 413 5999</a>
+                                <span id="switcher"><img src="images/switcher.jpg" alt=""></span>
+                            </div>
+                            <div class="number-drop">
+                                <a href="tel:096  888  8888">096  888  8888</a>
+                                <a href="tel:063  888  8888">063  888  8888</a>
+                            </div>
                         </div>
                     </div>
                     <div class="row text-right language-head">
@@ -63,8 +68,8 @@
                         </ul>
                     </div>
                 </div>
-                <button class="call">
-                    <a href="#modal_call" rel="modal:open">
+                <button class="call" type="button" data-toggle="modal" data-target="#myModal_4">
+                    <a href="#">
                         <img src="images/phone.jpg" alt="">
                         <h6>Замовити дзвінок</h6>
                     </a>
@@ -215,5 +220,11 @@
             );
         });
     </script>
+<script>
+    $('#switcher').click(function () {
+        $('#switcher img').toggleClass('active-arrow');
+        $('.number-drop').toggle();
+    })
+</script>
 </body>
 </html>
